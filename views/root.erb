@@ -1,0 +1,32 @@
+<% if flash[:register_notice] %>
+  <%= flash[:register_notice] %>
+<% end %>
+
+<% if session[:user_id] == nil %>
+  <a href="/register/">
+    <div id="register">
+      <p>Register</p>
+    </div>
+  </a>
+  <div id="wrapper">
+    <form action="/login/" method="post">
+      <label for="username">Username</label>
+      <input name="username" id="username" type="text">
+      <br/>
+      <label for="password">Password</label>
+      <input name="password" id="password" type="text">
+      <br/>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+<% end %>
+
+<% if session[:user_id] %>
+  <p>Welcome, <%= username %></p>
+
+  <a href="/logout/">
+    <div id="logout">
+      <p>Logout</p>
+    </div>
+  </a>
+<% end %>

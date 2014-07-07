@@ -1,0 +1,22 @@
+#register, #logout {
+    margin:auto;
+    width:225px;
+    border:2px solid black;
+    background-color: #ccc;
+    height:115px;
+    padding-top: 50px;
+    text-decoration: none;
+    color:black;
+    text-align:center;
+}
+
+#wrapper {
+    margin:auto;
+    width:225px;
+    border:2px solid black;
+    background-color: #ccc;
+}
+
+* a {
+    text-decoration: none;
+}
